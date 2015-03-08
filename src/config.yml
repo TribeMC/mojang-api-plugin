@@ -1,0 +1,13 @@
+#########################################
+#			Config MojangAPI			#
+#										#
+#		Plugin made by V3lop5			#
+#										#
+#		http://youtube.com/V3lop5		#
+#########################################
+URL:
+  uuidinformation: 'https://sessionserver.mojang.com/session/minecraft/profile/%UUID'
+  nameinformation: 'https://api.mojang.com/users/profiles/minecraft/%NAME'
+  namesfromuuid: 'https://api.mojang.com/user/profiles/%UUID/names'
+NPC:
+  despawndelay: 500

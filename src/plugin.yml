@@ -1,0 +1,48 @@
+name: MojangAPI
+version: 1.0
+main: v3lop5.mojangapi.Main
+description: MojangAPI made by V3lop5
+commands:
+  api:
+  mojangapi:
+permissions:
+  mojangapi.join:
+    default: op
+    description: MojangAPI Permissions for Join
+  mojangapi.help:
+    default: op
+    description: MojangAPI Permissions for Help Page
+  mojangapi.info.plugin:
+    default: op
+    description: MojangAPI Permissions for Information abount plugin
+  mojangapi.info.name:
+    default: op
+    description: MojangAPI Permissions for Name to UUiD
+  mojangapi.info.time:
+    default: op
+    description: MojangAPI Permissions for Time convert
+  mojangapi.info.uuid:
+    default: op
+    description: MojangAPI Permissions for Information about UUiD
+  mojangapi.info.names:
+    default: op
+    description: MojangAPI Permissions for Names by UUiD
+  mojangapi.spawn:
+    default: op
+    description: MojangAPI Permissions for Spawning Skin NPC
+  mojangapi.user:
+    default: true
+    description: MojangAPI GroupPermission
+    children:
+      mojangapi.info.plugin: true
+      mojangapi.join: true
+  mojangapi.admin:
+    default: op
+    children:
+      mojangapi.help: true
+      mojangapi.user: true
+      mojangapi.info.name: true
+      mojangapi.info.time: true
+      mojangapi.info.uuid: true
+      mojangapi.info.names: true
+      mojangapi.spawn: true
